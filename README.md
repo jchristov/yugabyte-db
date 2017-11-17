@@ -18,7 +18,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-##  What is YugaByte
+##  YugaByte DB
 YugaByte DB is an open source, cloud-native database for mission-critical enterprise applications. It is meant to be a system-of-record/authoritative database that applications can rely on for correctness and availability. It allows applications to easily scale up and scale down in the cloud, on-premises or across hybrid environments without creating operational complexity or increasing the risk of outages.
 
 ## Supported APIs
@@ -50,12 +50,13 @@ Here are a few resources for getting started with YugaByte:
 
 ## Core Concepts
 
-* Single Node
-  Every node in YugaByte DB is a highly available, distributed system with strong write consistency, tunable read consistency, and an advanced log-structured row/document-oriented storage model. Read more at  https://docs.yugabyte.com/architecture/concepts/single-node/
+* Single Node -
+  Every node of YugaByte DB is comprised of 2 layers, YBase and YQL. YBase, the core data fabric, is a highly available, distributed system with strong write consistency, tunable read consistency, and an advanced log-structured row/document-oriented storage model with several optimizations for handling ever-growing datasets efficiently. YQL is the upper/edge layer that has the API specific aspects - for example, the server-side implementation of Apache Cassandra and Redis protocols, and the corresponding query/command compilation and run-time (data type representations, built-in operations, etc.).
+  Read More at https://docs.yugabyte.com/architecture/concepts/single-node/
   <p align="center">
     <img src="https://docs.yugabyte.com/images/architecture.png" width="320" height="190"/>
   </p>
-* Universe
+* Universe -
   A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
   <p align="center">
     <img src="https://lh3.googleusercontent.com/o-zmMrgRsvNT22BrRYtCzhblHSXFXY3uqu5znmvX_HNqigeG3KgFlwqHgrGclitcdlP1j7PsefxQis5pJ87PSNrKqs65EPAJxq5lSJ0O1viFbEh0VLJZvkTpwy4TNSWZQKd3oBx4c9cJA9OvPSF16q7EHZsDM7YZD_UiAeP2YIHavE-beSMh3K_caZAYql3GkaF0WeCZ5rpqPYaEzVtBz42hQewfZDnd_ZvJ5HPXDuV7hSECg8aRdF8TL2UHwy-jx4ocPqSE-VuquwjcUBypKymFEhr98EHHnEsNRK432GXKMlobrDiV-PHLNNerX1HFlrLn4L3dRc30dmFSJOVEG5BLuHlr_CMfGwDttx4zncff6HVrFLpd1k357g_NpXSmE5Dyp7mN7nC3S6U-BLHFMAr-SaAmuDFgdp7lZEpiCTV36G6bI0qIRFpptli31vdnjJ57lAzd4TBvsk1r4kpYqpVz4pSKwqyzoWr0c2eRLiP-NDBxuQ2WHIeiyJ7l8BY0RTj1DgqNLJl9cwoglgbgxQs1RYzlB8Vo0NbiksiTDSOztqRO-zyowetsmB6i5fJPZKeETqbBoQT60Z_xrIa0mwOVPBW50a0f2ayNZq3l=w2680-h1670-no" width="320" height="190"/>
@@ -74,18 +75,18 @@ Here are a few resources for getting started with YugaByte:
     <img src="https://lh3.googleusercontent.com/vfR1udgQfpmQ5tYx2RCEN5IkiztwlA1Bd8gDYnEzxeRH-cuIqqcwDQlaIKVPVan5mC0hbkRvvLZdUey8PgxpeqtkDKU2bfJTbk-rc26jHSUzysRGMA-1BOXLiUjhDFX3EPa3ZUd5onU34X6azbcvYsejNNsKVGXYEFEhKFYAXLho2RzglyLEPGJ6VtKn07eyV09LHXwttc_B34g0VKDtYOKLKs4FPgfxHxH13vud5Ik9oAxTjDspjAbLa2WJE5CiUQASBRTpVY7IaESgdfKOPOy3Kgx4pvh5pPhYAifqxsP5b8-tituWUrohL9vyKdyjwgpASau_uos7OrGNWYYo6S2K12xn9M5fFSH_dUP8zzo5DG7Up5W5Ni5JnzLJK1tZX-8SrCQzS7YmxDaSVMTNi9A3T5hUp6bi8mq3orLzgSJRUFuI-Yqlr57awE4qulFxIr38hKnK7R1cS7UQtvOJ8NoLUs0qCNxi8Fd2AhTBHQxHZWPNc0nOZgq5tFzpeUHX6NYdUESB8hb5L0wSNqEyDHCt0sWdRUBlvYQDZCtKXfgJJnf1dxXaNaVxRSS0Y7bmDi8topgL9QsFFMKHlYLm9jbiNpfNqby6qz0eRjnP=w2880-h1800-no" width="320" height="190"/>
   </p>
   Read More at https://docs.yugabyte.com/architecture/concepts/universe/
-* Data Persistence
+* Data Persistence -
 DocDB is YugaByte’s Log Structured Merge tree (LSM) based storage engine. Once data is replicated via Raft across a majority of the tablet-peers, it is applied to each tablet peer’s local DocDB.
  Read More at https://docs.yugabyte.com/architecture/concepts/persistence/
 
-* YugaByte Query Layer
+* YugaByte Query Layer -
 The YQL layer implements the server-side of multiple protocols/APIs that YugaByte supports. Currently, YugaByte supports Apache Cassandra & Redis wire-protocols natively, and SQL is in the roadmap.
 <p align="center">
 <img src="https://docs.yugabyte.com/images/cluster_overview.png" width="320" height="140"/>
 </p>
 Read More at https://docs.yugabyte.com/architecture/concepts/yql/
 
-* Data Replication
+* Data Replication -
 Replication of data between the tablet-peers is strongly consistent using a custom implementation of the RAFT consensus algorithm. To achieve a Fault Tolerance of k nodes, a universe has to be configured with a RF of (2k + 1).
 Read More at https://docs.yugabyte.com/architecture/concepts/replication/
 <p align="center">
