@@ -36,30 +36,29 @@ Here are a few resources for getting started with YugaByte:
   or comments.
 
 ## Core Concepts
+
 * Single Node
-Every node in YugaByte DB is a highly available, distributed system with strong write consistency, tunable read consistency, and an advanced log-structured row/document-oriented storage model. Read more at  https://docs.yugabyte.com/architecture/concepts/single-node/
-<p align="center">
- <img src="https://docs.yugabyte.com/images/architecture.png" width="290" height="140"/>
- </p>
+  Every node in YugaByte DB is a highly available, distributed system with strong write consistency, tunable read consistency, and an advanced log-structured row/document-oriented storage model. Read more at  https://docs.yugabyte.com/architecture/concepts/single-node/
+  <p align="center">
+    <img src="https://docs.yugabyte.com/images/architecture.png" width="290" height="140"/>
+  </p>
 * Universe
-A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
-<p align="center">
-<img src="https://goo.gl/FdvtDG" width="290" height="140"/>
-</p>
+  A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
+  <p align="center">
+    <img src="https://lh3.googleusercontent.com/o-zmMrgRsvNT22BrRYtCzhblHSXFXY3uqu5znmvX_HNqigeG3KgFlwqHgrGclitcdlP1j7PsefxQis5pJ87PSNrKqs65EPAJxq5lSJ0O1viFbEh0VLJZvkTpwy4TNSWZQKd3oBx4c9cJA9OvPSF16q7EHZsDM7YZD_UiAeP2YIHavE-beSMh3K_caZAYql3GkaF0WeCZ5rpqPYaEzVtBz42hQewfZDnd_ZvJ5HPXDuV7hSECg8aRdF8TL2UHwy-jx4ocPqSE-VuquwjcUBypKymFEhr98EHHnEsNRK432GXKMlobrDiV-PHLNNerX1HFlrLn4L3dRc30dmFSJOVEG5BLuHlr_CMfGwDttx4zncff6HVrFLpd1k357g_NpXSmE5Dyp7mN7nC3S6U-BLHFMAr-SaAmuDFgdp7lZEpiCTV36G6bI0qIRFpptli31vdnjJ57lAzd4TBvsk1r4kpYqpVz4pSKwqyzoWr0c2eRLiP-NDBxuQ2WHIeiyJ7l8BY0RTj1DgqNLJl9cwoglgbgxQs1RYzlB8Vo0NbiksiTDSOztqRO-zyowetsmB6i5fJPZKeETqbBoQT60Z_xrIa0mwOVPBW50a0f2ayNZq3l=w2680-h1670-no" width="290" height="140"/>
+  </p>
 * T-Server and Master
-
-__YB T-Server__
-The YB T-Server (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
-<p align="center">
-<img src="https://goo.gl/UK4FKg" width="290" height="140"/>
-</p>
-__YB Master__
-The YB-TServer (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
-<p align="center">
-<img src="https://goo.gl/Wt6z7c" width="290" height="140"/>
-</p>
-Read More at https://docs.yugabyte.com/architecture/concepts/universe/
-
+  __YB T-Server__
+  The YB T-Server (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
+  <p align="center">
+    <img src="https://goo.gl/UK4FKg" width="290" height="140"/>
+  </p>
+  __YB Master__
+  The YB-TServer (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
+  <p align="center">
+    <img src="https://goo.gl/Wt6z7c" width="290" height="140"/>
+  </p>
+  Read More at https://docs.yugabyte.com/architecture/concepts/universe/
 * Data Persistence
 DocDB is YugaByte’s Log Structured Merge tree (LSM) based storage engine. Once data is replicated via Raft across a majority of the tablet-peers, it is applied to each tablet peer’s local DocDB.
  Read More at https://docs.yugabyte.com/architecture/concepts/persistence/
