@@ -1,5 +1,5 @@
 
-<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/> ###### Community Edition
+<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/> Community Edition
 
 **Table of Contents**
 
