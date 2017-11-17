@@ -3,21 +3,21 @@
 </p>
 **Table of Contents**
 
-- [What is YugaByte](#)
-- [Supported APIs](#)
-- [Getting Started](#)
-- [Core Concepts](#)
-- [Build Prerequisites](#)
-	- [CentOS 7](#)
-	- [Mac OS X](#)
-	- [All platforms: Java prerequisites](#)
-	- [Java Driver](#)
-- [Building YugaByte code](#)
-- [Running a Local Cluster](#)
-- [Comparison with other Databases](#)
-- [Reporting Issues](#)
-- [Contributing](#)
-- [License](#)
+- [What is YugaByte](#what-is-yugabyte)
+- [Supported APIs](#supported-apis)
+- [Getting Started](#getting-started)
+- [Core Concepts](#core-concepts)
+- [Build Prerequisites](#build-prerequisites)
+	- [CentOS 7](#centos7)
+	- [Mac OS X](#macosx)
+	- [All platforms: Java prerequisites](#all-platforms:-java-prerequisites)
+	- [Java Driver](#java-driver)
+- [Building YugaByte code](#building-yugabyte-code)
+- [Running a Local Cluster](#running-a-local-cluster)
+- [Comparison with other Databases](#comparison-with-other-databases)
+- [Reporting Issues](#reporting-issues)
+- [Contributing](#contributing)
+- [License](#license)
 
 ##  What is YugaByte
 YugaByte DB is an open source, cloud-native database for mission-critical enterprise applications. It is meant to be a system-of-record/authoritative database that applications can rely on for correctness and availability. It allows applications to easily scale up and scale down in the cloud, on-premises or across hybrid environments without creating operational complexity or increasing the risk of outages.
@@ -30,7 +30,7 @@ YugaByte is compatible with the following wire protocols-
 
 ## Installation
 * Building from Source
-    * Follow the instructions at [Building YugaByte code](#) for building from source.
+    * Follow the instructions [here](#building-yugabyte-code) for building from source.
 * Installing prebuilt packages
     * Community Edition -
         Follow instruction at https://docs.yugabyte.com/quick-start/install/ for installing YugaByte community edition for your platform.
