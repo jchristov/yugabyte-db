@@ -1,20 +1,6 @@
 
 <img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/><span> Community Edition </span>
 
-**Table of Contents**
-
-- [YugaByte Database](#)
-	- [Build Prerequisites](#)
-		- [CentOS 7](#)
-		- [Mac OS X](#)
-		- [All platforms: Java prerequisites](#)
-		- [Java Driver](#)
-	- [Building YugaByte code](#)
-	- [Running a Local Cluster](#)
-	- [Reporting Issues](#)
-	- [Contributing](#)
-	- [License](#)
-
 ##  What is YugaByte
 YugaByte DB is an open source, cloud-native database for mission-critical enterprise applications. It is meant to be a system-of-record/authoritative database that applications can rely on for correctness and availability. It allows applications to easily scale up and scale down in the cloud, on-premises or across hybrid environments without creating operational complexity or increasing the risk of outages.
 
