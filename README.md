@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
 </p>
+
 **Table of Contents**
 
 - [What is YugaByte](#what-is-yugabyte)
