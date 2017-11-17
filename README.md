@@ -32,9 +32,9 @@ YugaByte is compatible with the following wire protocols-
 * Building from Source
     * Follow the instructions at [Building YugaByte code](#) for building from source.
 * Installing prebuilt packages
-    * Community Edition
+    * Community Edition -
         Follow instruction at https://docs.yugabyte.com/quick-start/install/ for installing YugaByte community edition for your platform.
-    * Enterprise Edition
+    * Enterprise Edition -
         To install the enterprise edition of our public beta, please schedule a demo at sales@yugabyte.com
 
 ## Getting Started
