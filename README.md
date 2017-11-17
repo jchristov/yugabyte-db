@@ -30,7 +30,7 @@ YugaByte is compatible with the following wire protocols-
 
 ## Installation
 * Building from Source
-    * Follow the instructions [below](#Building YugaByte code) for building from source.
+    * Follow the instructions at [Building YugaByte code](#) for building from source.
 * Installing prebuilt packages
     * Community Edition
         Follow instruction at https://docs.yugabyte.com/quick-start/install/ for installing YugaByte community edition for your platform.
