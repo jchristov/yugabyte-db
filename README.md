@@ -1,6 +1,6 @@
-
-<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
-
+<p align="center">
+  <img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
+</p>
 **Table of Contents**
 
 - [What is YugaByte](#)
@@ -30,7 +30,7 @@ YugaByte is compatible with the following wire protocols-
 
 ## Installation
 * Building from Source
-    Follow the instructions below for building from source.
+    * Follow the instructions [below](#Building YugaByte code) for building from source.
 * Installing prebuilt packages
     * Community Edition
         Follow instruction at https://docs.yugabyte.com/quick-start/install/ for installing YugaByte community edition for your platform.
