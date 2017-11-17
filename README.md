@@ -1,9 +1,29 @@
-# YugaByte Database
 
-YugaByte is a cloud-native database for mission-critical applications. This repository contains the
-Community Edition of the YugaByte Database. YugaByte supports Apache Cassandra Query Language and
-Redis APIs, with SQL support on the roadmap.
+<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/><span> Community Edition </span>
+**Table of Contents**
 
+- [YugaByte Database](#)
+	- [Build Prerequisites](#)
+		- [CentOS 7](#)
+		- [Mac OS X](#)
+		- [All platforms: Java prerequisites](#)
+		- [Java Driver](#)
+	- [Building YugaByte code](#)
+	- [Running a Local Cluster](#)
+	- [Reporting Issues](#)
+	- [Contributing](#)
+	- [License](#)
+
+##  What is YugaByte
+YugaByte DB is an open source, cloud-native database for mission-critical enterprise applications. It is meant to be a system-of-record/authoritative database that applications can rely on for correctness and availability. It allows applications to easily scale up and scale down in the cloud, on-premises or across hybrid environments without creating operational complexity or increasing the risk of outages.
+
+## Supported APIs
+YugaByte is compatible with the following wire protocols-
+* Apache Cassandra Query Language
+* Redis APIs
+*  SQL support is on the roadmap
+
+## Getting Started
 Here are a few resources for getting started with YugaByte:
 * [Community Edition Quick Start](http://docs.yugabyte.com/community-edition/quick-start/) to
   get started with YugaByte using a pre-built YugaByte Community Edition package.
@@ -14,6 +34,49 @@ Here are a few resources for getting started with YugaByte:
 * See [www.yugabyte.com](https://www.yugabyte.com/) for general information about YugaByte.
 * Check out the [YugaByte Community Forum](http://forum.yugabyte.com) and post your questions
   or comments.
+
+## Core Concepts
+* Single Node
+Every node in YugaByte DB is a highly available, distributed system with strong write consistency, tunable read consistency, and an advanced log-structured row/document-oriented storage model. Read more at  https://docs.yugabyte.com/architecture/concepts/single-node/
+<p align="center">
+ <img src="https://docs.yugabyte.com/images/architecture.png" width="290" height="140"/>
+ </p>
+* Universe
+A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
+<p align="center">
+<img src="https://goo.gl/FdvtDG" width="290" height="140"/>
+</p>
+* T-Server and Master
+
+__YB T-Server__
+The YB T-Server (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
+<p align="center">
+<img src="https://goo.gl/UK4FKg" width="290" height="140"/>
+</p>
+__YB Master__
+The YB-TServer (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
+<p align="center">
+<img src="https://goo.gl/Wt6z7c" width="290" height="140"/>
+</p>
+Read More at https://docs.yugabyte.com/architecture/concepts/universe/
+
+* Data Persistence
+DocDB is YugaByte’s Log Structured Merge tree (LSM) based storage engine. Once data is replicated via Raft across a majority of the tablet-peers, it is applied to each tablet peer’s local DocDB.
+ Read More at https://docs.yugabyte.com/architecture/concepts/persistence/
+
+* YugaByte Query Layer
+The YQL layer implements the server-side of multiple protocols/APIs that YugaByte supports. Currently, YugaByte supports Apache Cassandra & Redis wire-protocols natively, and SQL is in the roadmap.
+<p align="center">
+<img src="https://docs.yugabyte.com/images/cluster_overview.png" width="290" height="140"/>
+</p>
+Read More at https://docs.yugabyte.com/architecture/concepts/yql/
+
+* Data Replication
+Replication of data between the tablet-peers is strongly consistent using a custom implementation of the RAFT consensus algorithm. To achieve a Fault Tolerance of k nodes, a universe has to be configured with a RF of (2k + 1).
+Read More at https://docs.yugabyte.com/architecture/concepts/replication/
+<p align="center">
+<img src="https://docs.yugabyte.com/images/raft_replication.png" width="290" height="140"/>
+</p>
 
 ## Build Prerequisites
 
@@ -125,6 +188,13 @@ Now you can follow the [Communty Edition Quick Start / Create local cluster
 ](http://docs.yugabyte.com/community-edition/quick-start/#create-local-cluster) tutorial
 to create a local cluster and test it using Apache CQL shell and Redis clients, as well as run
 the provied Java sample apps.
+
+## Comparison with other Databases
+Please review https://docs.yugabyte.com/architecture/comparisons/
+to see how we compare with other SQL and NoSql databases in the market.
+* Apache Cassandra https://docs.yugabyte.com/architecture/comparisons/cassandra/
+* Redis https://docs.yugabyte.com/architecture/comparisons/redis/
+* Apache HBase https://docs.yugabyte.com/architecture/comparisons/hbase/
 
 ## Reporting Issues
 
