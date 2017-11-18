@@ -4,7 +4,7 @@
 
 - [What is YugaByte](#what-is-yugabyte)
 - [Supported APIs](#supported-apis)
-- [Installation[(#installation)
+- [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Core Concepts](#core-concepts)
     - [Single Node](#single-node)
