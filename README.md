@@ -9,7 +9,7 @@
 - [Build Prerequisites](#build-prerequisites)
 	- [CentOS 7](#centos7)
 	- [Mac OS X](#macosx)
-	- [All platforms: Java prerequisites](#all-platforms:-java-prerequisites)
+	- [All platforms: Java prerequisites](#all-platforms-java-prerequisites)
 	- [Java Driver](#java-driver)
 - [Building YugaByte code](#building-yugabyte-code)
 - [Running a Local Cluster](#running-a-local-cluster)
