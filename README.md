@@ -1,4 +1,4 @@
-<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
+<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="left" height="56" alt="YugaByte DB"/>
 
 **Table of Contents**
 
@@ -7,12 +7,12 @@
 - [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Core Concepts](#core-concepts)
-    - [Single Node](#single-node)
-    - [Universe](#universe)
-    - [TServer and Master](#tserver-and-master)
-    - [Data Persistence](#data-persistence)
-    - [YugaByte Query Layer](#yugabyte-query-layer)
-    - [Data Replication](#data-replication)
+    	- [Single Node](#single-node)
+    	- [Universe](#universe)
+    	- [TServer and Master](#tserver-and-master)
+    	- [Data Persistence](#data-persistence)
+    	- [YugaByte Query Layer](#yugabyte-query-layer)
+    	- [Data Replication](#data-replication)
 - [Build Prerequisites](#build-prerequisites)
 	- [CentOS 7](#centos-7)
 	- [Mac OS X](#mac-os-x)
@@ -88,6 +88,7 @@ Here are a few resources for getting started with YugaByte:
     <img src="https://lh3.googleusercontent.com/vfR1udgQfpmQ5tYx2RCEN5IkiztwlA1Bd8gDYnEzxeRH-cuIqqcwDQlaIKVPVan5mC0hbkRvvLZdUey8PgxpeqtkDKU2bfJTbk-rc26jHSUzysRGMA-1BOXLiUjhDFX3EPa3ZUd5onU34X6azbcvYsejNNsKVGXYEFEhKFYAXLho2RzglyLEPGJ6VtKn07eyV09LHXwttc_B34g0VKDtYOKLKs4FPgfxHxH13vud5Ik9oAxTjDspjAbLa2WJE5CiUQASBRTpVY7IaESgdfKOPOy3Kgx4pvh5pPhYAifqxsP5b8-tituWUrohL9vyKdyjwgpASau_uos7OrGNWYYo6S2K12xn9M5fFSH_dUP8zzo5DG7Up5W5Ni5JnzLJK1tZX-8SrCQzS7YmxDaSVMTNi9A3T5hUp6bi8mq3orLzgSJRUFuI-Yqlr57awE4qulFxIr38hKnK7R1cS7UQtvOJ8NoLUs0qCNxi8Fd2AhTBHQxHZWPNc0nOZgq5tFzpeUHX6NYdUESB8hb5L0wSNqEyDHCt0sWdRUBlvYQDZCtKXfgJJnf1dxXaNaVxRSS0Y7bmDi8topgL9QsFFMKHlYLm9jbiNpfNqby6qz0eRjnP=w2880-h1800-no" width="320" height="190"/>
   </p>
   Read More at https://docs.yugabyte.com/architecture/concepts/universe/
+  
 ### Data Persistence -
 DocDB is YugaByte’s Log Structured Merge tree (LSM) based storage engine. Once data is replicated via Raft across a majority of the tablet-peers, it is applied to each tablet peer’s local DocDB.
  Read More at https://docs.yugabyte.com/architecture/concepts/persistence/
