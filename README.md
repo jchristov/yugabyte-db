@@ -4,8 +4,12 @@
 
 - [What is YugaByte](#what-is-yugabyte)
 - [Supported APIs](#supported-apis)
+- [Installation[(#installation)
 - [Getting Started](#getting-started)
 - [Core Concepts](#core-concepts)
+    - [Single Node](#single-node)
+    - [Universe](#universe)
+    - [TServer and Master](#tserverandmaster)
 - [Build Prerequisites](#build-prerequisites)
 	- [CentOS 7](#centos7)
 	- [Mac OS X](#macosx)
@@ -61,15 +65,17 @@ Here are a few resources for getting started with YugaByte:
   <p align="center">
     <img src="https://lh3.googleusercontent.com/o-zmMrgRsvNT22BrRYtCzhblHSXFXY3uqu5znmvX_HNqigeG3KgFlwqHgrGclitcdlP1j7PsefxQis5pJ87PSNrKqs65EPAJxq5lSJ0O1viFbEh0VLJZvkTpwy4TNSWZQKd3oBx4c9cJA9OvPSF16q7EHZsDM7YZD_UiAeP2YIHavE-beSMh3K_caZAYql3GkaF0WeCZ5rpqPYaEzVtBz42hQewfZDnd_ZvJ5HPXDuV7hSECg8aRdF8TL2UHwy-jx4ocPqSE-VuquwjcUBypKymFEhr98EHHnEsNRK432GXKMlobrDiV-PHLNNerX1HFlrLn4L3dRc30dmFSJOVEG5BLuHlr_CMfGwDttx4zncff6HVrFLpd1k357g_NpXSmE5Dyp7mN7nC3S6U-BLHFMAr-SaAmuDFgdp7lZEpiCTV36G6bI0qIRFpptli31vdnjJ57lAzd4TBvsk1r4kpYqpVz4pSKwqyzoWr0c2eRLiP-NDBxuQ2WHIeiyJ7l8BY0RTj1DgqNLJl9cwoglgbgxQs1RYzlB8Vo0NbiksiTDSOztqRO-zyowetsmB6i5fJPZKeETqbBoQT60Z_xrIa0mwOVPBW50a0f2ayNZq3l=w2680-h1670-no" width="320" height="190"/>
   </p>
-* T-Server and Master
+* TServer and Master -
 
   __YB TServer__
+
   The YB-TServer (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
   <p align="center">
     <img src="https://lh3.googleusercontent.com/2nx6x2q5gXZpivpexyfQhETxq0cDWjsjzuXn_FrjRUOnMlbgB5Od6DP4Yow_-OW34wb8RhK8sitVb8UViwCtFthVC64Ji3kvPPJ3zMFoXuzcEU3DMhLIKLv50qnWq-pkgfaTv-sFdtwMxDMziGeG0cDGjr67chKv5D0MLtw8tjELEeye30lQYtN3Ey9uh-_Muky5lWh4aWyXStuoMGhDR0MWpY8d_32Sl7pnAbWlJ5P2snNXlzNm5nJmyXmUJhYJxKW31DbUz0eUTE4rk5WvXnjU8ANA47RehTFlirscQd6zXAe9psKWyFuGI1wAMtLBvbWgfXKmDetQRIFX2lzNimE0rEXZOZ9RbE89UhNdKraM40YnEOcfvCbWVUeiqUbrRiCvx_46Ly_PmXWAvuV2qlCDiZRL1Ti9Jp_tFofUsEbl6Uei1rnuxlbp9aP2wJJi4Z7ako5QBhyYsk8O-QdFgEzbe7xrldBU-A4R0lWSSPktqQlwOcYJv_80MdFtIFlUQy7Ts-vw59bS1frYL-L_joaVhEamNc5R0rLQPIc_2baAvDkKmCt2nEd9Nc1I0HeP-XBmADtq-vHCHC9eiTpwF5kD7dKMd7fLRfs2WgIG=w2854-h1800-no" width="320" height="190"/>
   </p>
 
   __YB Master__
+
   The YB-Master (aka the YugaByte Master Server) is the keeper of system meta-data/records, also responsible for coordinating background operations (such as load-balancing or initiating re-replication of under-replicated data) .
   <p align="center">
     <img src="https://lh3.googleusercontent.com/vfR1udgQfpmQ5tYx2RCEN5IkiztwlA1Bd8gDYnEzxeRH-cuIqqcwDQlaIKVPVan5mC0hbkRvvLZdUey8PgxpeqtkDKU2bfJTbk-rc26jHSUzysRGMA-1BOXLiUjhDFX3EPa3ZUd5onU34X6azbcvYsejNNsKVGXYEFEhKFYAXLho2RzglyLEPGJ6VtKn07eyV09LHXwttc_B34g0VKDtYOKLKs4FPgfxHxH13vud5Ik9oAxTjDspjAbLa2WJE5CiUQASBRTpVY7IaESgdfKOPOy3Kgx4pvh5pPhYAifqxsP5b8-tituWUrohL9vyKdyjwgpASau_uos7OrGNWYYo6S2K12xn9M5fFSH_dUP8zzo5DG7Up5W5Ni5JnzLJK1tZX-8SrCQzS7YmxDaSVMTNi9A3T5hUp6bi8mq3orLzgSJRUFuI-Yqlr57awE4qulFxIr38hKnK7R1cS7UQtvOJ8NoLUs0qCNxi8Fd2AhTBHQxHZWPNc0nOZgq5tFzpeUHX6NYdUESB8hb5L0wSNqEyDHCt0sWdRUBlvYQDZCtKXfgJJnf1dxXaNaVxRSS0Y7bmDi8topgL9QsFFMKHlYLm9jbiNpfNqby6qz0eRjnP=w2880-h1800-no" width="320" height="190"/>
@@ -128,7 +134,7 @@ git clone git@github.com:linuxbrew/brew.git ~/.linuxbrew-yb-build
 ~/.linuxbrew-yb-build/bin/brew install autoconf automake boost flex gcc libtool
 ```
 
-We don't need to add `~/.linuxbrew-yb-build/bin` to PATH. The build scripts will automatically
+You don't need to add `~/.linuxbrew-yb-build/bin` to PATH. The build scripts will automatically
 discover this Linuxbrew installation.
 
 ### Mac OS X
