@@ -58,16 +58,20 @@ Here are a few resources for getting started with YugaByte:
 ## Core Concepts
 
 ### Single Node -
+
   Every node of YugaByte DB is comprised of 2 layers, YBase and YQL. YBase, the core data fabric, is a highly available, distributed system with strong write consistency, tunable read consistency, and an advanced log-structured row/document-oriented storage model with several optimizations for handling ever-growing datasets efficiently. YQL is the upper/edge layer that has the API specific aspects - for example, the server-side implementation of Apache Cassandra and Redis protocols, and the corresponding query/command compilation and run-time (data type representations, built-in operations, etc.).
   Read More at https://docs.yugabyte.com/architecture/concepts/single-node/
   <p align="center">
     <img src="https://docs.yugabyte.com/images/architecture.png" width="320" height="190"/>
   </p>
+
 ### Universe -
+
   A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
   <p align="center">
     <img src="https://lh3.googleusercontent.com/o-zmMrgRsvNT22BrRYtCzhblHSXFXY3uqu5znmvX_HNqigeG3KgFlwqHgrGclitcdlP1j7PsefxQis5pJ87PSNrKqs65EPAJxq5lSJ0O1viFbEh0VLJZvkTpwy4TNSWZQKd3oBx4c9cJA9OvPSF16q7EHZsDM7YZD_UiAeP2YIHavE-beSMh3K_caZAYql3GkaF0WeCZ5rpqPYaEzVtBz42hQewfZDnd_ZvJ5HPXDuV7hSECg8aRdF8TL2UHwy-jx4ocPqSE-VuquwjcUBypKymFEhr98EHHnEsNRK432GXKMlobrDiV-PHLNNerX1HFlrLn4L3dRc30dmFSJOVEG5BLuHlr_CMfGwDttx4zncff6HVrFLpd1k357g_NpXSmE5Dyp7mN7nC3S6U-BLHFMAr-SaAmuDFgdp7lZEpiCTV36G6bI0qIRFpptli31vdnjJ57lAzd4TBvsk1r4kpYqpVz4pSKwqyzoWr0c2eRLiP-NDBxuQ2WHIeiyJ7l8BY0RTj1DgqNLJl9cwoglgbgxQs1RYzlB8Vo0NbiksiTDSOztqRO-zyowetsmB6i5fJPZKeETqbBoQT60Z_xrIa0mwOVPBW50a0f2ayNZq3l=w2680-h1670-no" width="320" height="190"/>
   </p>
+
 ### TServer and Master -
 
   __YB TServer__
@@ -89,6 +93,7 @@ DocDB is YugaByte’s Log Structured Merge tree (LSM) based storage engine. Once
  Read More at https://docs.yugabyte.com/architecture/concepts/persistence/
 
 ### YugaByte Query Layer -
+
 The YQL layer implements the server-side of multiple protocols/APIs that YugaByte supports. Currently, YugaByte supports Apache Cassandra & Redis wire-protocols natively, and SQL is in the roadmap.
 <p align="center">
 <img src="https://docs.yugabyte.com/images/cluster_overview.png" width="320" height="140"/>
@@ -96,6 +101,7 @@ The YQL layer implements the server-side of multiple protocols/APIs that YugaByt
 Read More at https://docs.yugabyte.com/architecture/concepts/yql/
 
 ### Data Replication -
+
 Replication of data between the tablet-peers is strongly consistent using a custom implementation of the RAFT consensus algorithm. To achieve a Fault Tolerance of k nodes, a universe has to be configured with a RF of (2k + 1).
 Read More at https://docs.yugabyte.com/architecture/concepts/replication/
 <p align="center">
