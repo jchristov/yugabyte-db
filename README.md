@@ -1,4 +1,4 @@
-<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="left" height="56" alt="YugaByte DB"/>
+<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
 
 **Table of Contents**
 
