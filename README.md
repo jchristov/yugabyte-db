@@ -67,7 +67,7 @@ Every node of YugaByte DB is comprised of 2 layers, YBase and YQL. YBase, the co
 ### Universe
 A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
   <p align="center">
-    <img src="https://lh3.googleusercontent.com/kYgsdv5HGo24LCgk9bTgUtmKnOpvSNdKh3QjP25FP6_H-EVXSTxVZknu43JAg5mHYhERBS8C8SMSt09ecBIc=w2230-h1678" width="320" height="190"/>
+    <img src="https://lh3.googleusercontent.com/kYgsdv5HGo24LCgk9bTgUtmKnOpvSNdKh3QjP25FP6_H-EVXSTxVZknu43JAg5mHYhERBS8C8SMSt09ecBIc=w2230-h1678" width="400" height="190"/>
   </p>
 
 ### TServer and Master
@@ -75,13 +75,13 @@ A universe is a group of nodes (VMs, physical machines or containers) that colle
 #### YB TServer
 The YB-TServer (aka the YugaByte Tablet Server) processes are responsible for hosting/serving user data.
   <p align="center">
-    <img src="https://lh4.googleusercontent.com/-G1tfVHj8bYREerHSrNQlh_Az6ENmnRzLmxNiAG9J9EwtCzCmqROE7p4bYWJhzE851eZbeJLwmlEpZ0DZzLp=w2230-h1678" width="320" height="190"/>
+    <img src="https://lh4.googleusercontent.com/-G1tfVHj8bYREerHSrNQlh_Az6ENmnRzLmxNiAG9J9EwtCzCmqROE7p4bYWJhzE851eZbeJLwmlEpZ0DZzLp=w2230-h1678" width="400" height="190"/>
   </p>
 
 #### YB Master
 The YB-Master (aka the YugaByte Master Server) is the keeper of system meta-data/records, also responsible for coordinating background operations (such as load-balancing or initiating re-replication of under-replicated data) .
   <p align="center">
-    <img src="https://lh3.googleusercontent.com/Zb-jyTDiZz8NQryLsmWjif35DHK4_E8MAGqMODBqGagMyyWoCucBBpgvywEe0-eVOa5c08Iv4Q99-2ioCC6z=w2230-h1678" width="320" height="190"/>
+    <img src="https://lh3.googleusercontent.com/Zb-jyTDiZz8NQryLsmWjif35DHK4_E8MAGqMODBqGagMyyWoCucBBpgvywEe0-eVOa5c08Iv4Q99-2ioCC6z=w2230-h1678" width="400" height="190"/>
   </p>
   Read More at https://docs.yugabyte.com/architecture/concepts/universe/
   
