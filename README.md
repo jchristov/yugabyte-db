@@ -67,7 +67,7 @@ Every node of YugaByte DB is comprised of 2 layers, YBase and YQL. YBase, the co
 ### Universe
 A universe is a group of nodes (VMs, physical machines or containers) that collectively function as a locally/globally distributed, highly available and resilient database. Read More at https://docs.yugabyte.com/architecture/concepts/universe/
   <p align="center">
-    <img src="https://lh3.googleusercontent.com/o-zmMrgRsvNT22BrRYtCzhblHSXFXY3uqu5znmvX_HNqigeG3KgFlwqHgrGclitcdlP1j7PsefxQis5pJ87PSNrKqs65EPAJxq5lSJ0O1viFbEh0VLJZvkTpwy4TNSWZQKd3oBx4c9cJA9OvPSF16q7EHZsDM7YZD_UiAeP2YIHavE-beSMh3K_caZAYql3GkaF0WeCZ5rpqPYaEzVtBz42hQewfZDnd_ZvJ5HPXDuV7hSECg8aRdF8TL2UHwy-jx4ocPqSE-VuquwjcUBypKymFEhr98EHHnEsNRK432GXKMlobrDiV-PHLNNerX1HFlrLn4L3dRc30dmFSJOVEG5BLuHlr_CMfGwDttx4zncff6HVrFLpd1k357g_NpXSmE5Dyp7mN7nC3S6U-BLHFMAr-SaAmuDFgdp7lZEpiCTV36G6bI0qIRFpptli31vdnjJ57lAzd4TBvsk1r4kpYqpVz4pSKwqyzoWr0c2eRLiP-NDBxuQ2WHIeiyJ7l8BY0RTj1DgqNLJl9cwoglgbgxQs1RYzlB8Vo0NbiksiTDSOztqRO-zyowetsmB6i5fJPZKeETqbBoQT60Z_xrIa0mwOVPBW50a0f2ayNZq3l=w2680-h1670-no" width="320" height="190"/>
+    <img src="https://lh3.googleusercontent.com/kYgsdv5HGo24LCgk9bTgUtmKnOpvSNdKh3QjP25FP6_H-EVXSTxVZknu43JAg5mHYhERBS8C8SMSt09ecBIc=w2230-h1678" width="320" height="190"/>
   </p>
 
 ### TServer and Master
