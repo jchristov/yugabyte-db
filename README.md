@@ -92,7 +92,7 @@ DocDB is YugaByte’s Log Structured Merge tree (LSM) based storage engine. Once
 ### YugaByte Query Layer
 The YQL layer implements the server-side of multiple protocols/APIs that YugaByte supports. Currently, YugaByte supports Apache Cassandra & Redis wire-protocols natively, and SQL is in the roadmap.
 <p align="center">
-<img src="https://docs.yugabyte.com/images/cluster_overview.png" width="320" height="140"/>
+<img src="https://docs.yugabyte.com/images/cluster_overview.png" width="400" height="140"/>
 </p>
 Read More at https://docs.yugabyte.com/architecture/concepts/yql/
 
@@ -100,7 +100,7 @@ Read More at https://docs.yugabyte.com/architecture/concepts/yql/
 Replication of data between the tablet-peers is strongly consistent using a custom implementation of the RAFT consensus algorithm. To achieve a Fault Tolerance of k nodes, a universe has to be configured with a RF of (2k + 1).
 Read More at https://docs.yugabyte.com/architecture/concepts/replication/
 <p align="center">
-<img src="https://docs.yugabyte.com/images/raft_replication.png" width="320" height="140"/>
+<img src="https://docs.yugabyte.com/images/raft_replication.png" width="400" height="140"/>
 </p>
 
 ## Build Prerequisites
